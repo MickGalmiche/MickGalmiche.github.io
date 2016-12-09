@@ -189,7 +189,7 @@ h3 {
 
 #formation {
 	padding: 80px, 0;
-	background: url(assets/images/bg_p.png) repeat top left, url(assets/images/110_98832.JPG) no-repeat center 70px fixed;
+	background: url(images/bg_p.png) repeat top left, url(images/110_98832.JPG) no-repeat center 70px fixed;
 	background-size: auto, cover;
 }
 
@@ -227,7 +227,7 @@ h4 a {
 
 #hobby {
 	padding: 80px, 0;
-	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(assets/images/font_hobby_n&b.jpg) no-repeat center 70px fixed;
+	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(images/font_hobby_n&b.jpg) no-repeat center 70px fixed;
 	background-size: cover;
 	color: #ffffff;
 }
