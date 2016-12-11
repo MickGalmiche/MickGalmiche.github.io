@@ -232,12 +232,6 @@ h4 a {
 	color: #ffffff;
 }
 
-/*.opacite {
-	margin: 0;
-	padding: 80px 0; 
-	background:rgba(3,3,3,0.9);
-}*/
-
 #hobby .cadre {
 	background:rgba(3,3,3,.7);
 }
@@ -248,92 +242,68 @@ h4 a {
 
 /* contact */
 
-#contact {
-	margin-bottom: 500px;
-}
-
-
-#contact a {
-	text-decoration: none;
-	color: #000000;
-
-}
-
-form {
+#contact .cadre {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	height: 250px;
 }
 
-fieldset {
-	border: 1px solid #CCCCCC;
-	border-radius: 10px;
+#contact ul {
+	list-style: none;
+}
+
+.social {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+	padding-left: 0;
 	margin: 0;
 }
 
-fieldset div {
-	display: flex;
-}
-
-legend {
+.social a {
+	border-radius: 20px;
+	border: 2px solid #999;
+	color: gray;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	font-size: 24px;
 	text-align: center;
+	line-height: 1.7em;
+	margin: 5px;
 }
 
-input {
-	flex: 1;
-	border: none;
-	border-bottom: 1px solid #CCCCCC;
-	margin: 10px;
-	padding-left: 5px;
-	font-family: 'capsuularegular', Sans-Serif;
-	font-size: .95em;
+.social i {
+	box-sizing: border-box;
 }
 
-input:focus {
-	background: #eee;
-	outline: none;
-	border-radius: 5px;
+.social a:hover {
+	background-color: #999;
+	color: white;
 }
 
-fieldset:last-of-type {
-	padding: 0;
+
+.codecademy {
+	background-image: url(images/codecademy_gray.png);
+	background-size: 32px 32px;
+	background-position: center;
 }
 
-textarea {
-	flex: 1;
-	border: none;
-	border-radius: 10px;
-	outline: none;
-	resize: none;
-	overflow: auto;
-	font-family: 'capsuularegular', Sans-Serif;
-	height: 80px;
-	font-size: .95em;
-
+.codecademy:hover {
+	background-image: url(images/codecademy_white.png);
+	background-size: 32px 32px;
+	background-position: center;
 }
 
-button {
-	margin: 10px auto;
-	width: 60px;
-	height: 30px;
-	color: #000000;
-	background: #ddd;
-    border: 1px solid #999999;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
-                 0 -1px 0 rgba( 255, 255, 255, 0.4);
+.openclassrooms {
+	background-image: url(images/oc_gray.png);
+	background-size: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-button:hover {
-    color: #ffffff;
-    background: #999;
-    background: linear-gradient( #777, #333);
+.openclassrooms:hover {
+	background-image: url(images/oc_white.png);
 }
-
-button:active {
-     color: #fff;
-     background: #999;
-     background: linear-gradient( #777, #333);
-     box-shadow: 1px 1px 10px black inset, 
-                 0 1px 0 rgba( 255, 255, 255, 0.4);
-}
-
