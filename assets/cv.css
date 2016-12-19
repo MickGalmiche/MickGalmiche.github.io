@@ -163,6 +163,12 @@ h3 {
 	align-self: center;
 }
 
+.slider-nav a {
+	text-decoration: none;
+	color: #999999;
+	font-size: 2em;
+}
+
 .slide {
 	margin: auto;
 	padding: 20px;
@@ -216,6 +222,14 @@ h4 a {
 	margin: 0;
 	padding-left: 0;
 	list-style: circle inside;
+}
+
+.badgeCertif{
+	border: 1px solid #999999;
+	background-color: lightgray;
+	border-radius: 20px;
+	padding: 0 8px;
+	margin-left: 4px;
 }
 
 /*hobby*/
