@@ -19,8 +19,9 @@ body {
 
 /* header avec barre de navigation */
 header {
-	background-color: #ffffff;
-	border-bottom: 2px solid #999999;
+	background-color: whitesmoke;
+	border-bottom: 1px solid #999999;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -44,7 +45,7 @@ nav {
 
 nav ul {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	justify-content: space-around;
 	list-style: none;
 	padding-left: 0;
@@ -116,25 +117,20 @@ h3 {
 	margin: 10px;
 	padding: 30px;
 	background-color: #ffffff;
-	height: 340px;
+	height: 320px;
 	width: 390px;
 }
-
-#formation .cadre {
-	height: 360px;
-}
-
 
 /* Partie compétences */
 #competence {
 	margin: auto;
 }
 
-#selec-comp {
+.selec-comp {
 	width: 100%
 }
 
-#selec-comp ul {
+.selec-comp ul {
 	display: flex;
 	justify-content: center;
 	list-style: none;
@@ -142,16 +138,19 @@ h3 {
 
 }
 
-#selec-comp li {
-	margin: 10px;
+.selec-comp li {
+	margin: 0 10px;
 }
 
 .encadrement {
-	height: 320px;
-	width: 420px;
-	border: 1px solid #CCCCCC;
-	margin: auto;
 	display: flex;
+	flex-direction: column;
+
+}
+
+#competence .cadre {
+	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 }
 
@@ -169,32 +168,46 @@ h3 {
 	font-size: 2em;
 }
 
-.slide {
+.slide, .HR-slide {
 	margin: auto;
-	padding: 20px;
+	padding: 0 20px;
 	display: none;
 	height: 300px;
 	width: 300px;
 }
 
-.active-slide {
+.active-slide, .HR-active-slide {
 	display: block;
 }
 
-.slide ul {
+.slide ul, .HR-slide ul {
 	padding-left: 0;
 	list-style: circle inside;
 }
 
-.active-menu {
+.active-menu, .HR-active-menu {
 	color: #000000;
 	border-bottom: 1.5px solid #000000;
+}
+
+.badges {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.badgeCertif{
+	border: 1px solid #999999;
+	background-color: lightgray;
+	border-radius: 20px;
+	padding: 0 8px;
+	margin-left: 4px;
 }
 
 /*partie formation*/
 
 #formation {
-	padding: 80px, 0;
+	padding: 80px 0;
 	background: url(images/bg_p.png) repeat top left, url(images/110_98832.JPG) no-repeat center 70px fixed;
 	background-size: auto, cover;
 }
@@ -209,7 +222,7 @@ h4 {
 	margin: 10px;
 }
 
-h4 a {
+h3 a {
 	text-decoration: none;
 	color: #000000;
 }
@@ -224,14 +237,6 @@ h4 a {
 	list-style: circle inside;
 }
 
-.badgeCertif{
-	border: 1px solid #999999;
-	background-color: lightgray;
-	border-radius: 20px;
-	padding: 0 8px;
-	margin-left: 4px;
-}
-
 /*hobby*/
 
 #hobby ul {
@@ -240,7 +245,7 @@ h4 a {
 }
 
 #hobby {
-	padding: 80px, 0;
+	padding: 80px 0;
 	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(images/font_hobby_n&b.jpg) no-repeat center 70px fixed;
 	background-size: cover;
 	color: #ffffff;

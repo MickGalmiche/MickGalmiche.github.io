@@ -4,23 +4,16 @@ var main = function() {
     var currentSlide = $('.active-slide');
     var nextSlide = currentSlide.next();
 
-    var currentDot = $('.active-dot');
-    var nextDot = currentDot.next();
-
     var currentMenu = $('.active-menu');
     var nextMenu = currentMenu.next();
 
     if(nextSlide.length === 0) {
       nextSlide = $('.slide').first();
-      nextDot = $('.dot').first();
       nextMenu = $('.slide-menu').first();
     }
     
     currentSlide.removeClass('active-slide');
     nextSlide.addClass('active-slide');
-
-    currentDot.removeClass('active-dot');
-    nextDot.addClass('active-dot');
 
     currentMenu.removeClass('active-menu');
     nextMenu.addClass('active-menu');
@@ -31,26 +24,58 @@ var main = function() {
     var currentSlide = $('.active-slide');
     var prevSlide = currentSlide.prev();
 
-    var currentDot = $('.active-dot');
-    var prevDot = currentDot.prev();
-
     var currentMenu = $('.active-menu');
     var prevMenu = currentMenu.prev();
 
     if(prevSlide.length === 0) {
       prevSlide = $('.slide').last();
-      prevDot = $('.dot').last();
       prevMenu = $('.slide-menu').last();
     }
     
     currentSlide.removeClass('active-slide');
     prevSlide.addClass('active-slide');
 
-    currentDot.removeClass('active-dot');
-    prevDot.addClass('active-dot');
-
     currentMenu.removeClass('active-menu');
     prevMenu.addClass('active-menu');
+  });
+
+  $('.HR-arrow-next').click(function() {
+    var currentSlide = $('.HR-active-slide');
+    var nextSlide = currentSlide.next();
+
+    var currentMenu = $('.HR-active-menu');
+    var nextMenu = currentMenu.next();
+
+    if(nextSlide.length === 0) {
+      nextSlide = $('.HR-slide').first();
+      nextMenu = $('.HR-slide-menu').first();
+    }
+    
+    currentSlide.removeClass('HR-active-slide');
+    nextSlide.addClass('HR-active-slide');
+
+    currentMenu.removeClass('HR-active-menu');
+    nextMenu.addClass('HR-active-menu');
+  });
+
+
+  $('.HR-arrow-prev').click(function() {
+    var currentSlide = $('.HR-active-slide');
+    var prevSlide = currentSlide.prev();
+
+    var currentMenu = $('.HR-active-menu');
+    var prevMenu = currentMenu.prev();
+
+    if(prevSlide.length === 0) {
+      prevSlide = $('.HR-slide').last();
+      prevMenu = $('.HR-slide-menu').last();
+    }
+    
+    currentSlide.removeClass('HR-active-slide');
+    prevSlide.addClass('HR-active-slide');
+
+    currentMenu.removeClass('HR-active-menu');
+    prevMenu.addClass('HR-active-menu');
   });
 
   $('.js-scrollTo').on('click', function() { // Au clic sur un élément
